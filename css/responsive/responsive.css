@@ -61,7 +61,7 @@
         gap: 25px;
 
         /* padding-top: 2vh; */
-        padding-top: clamp(-100px, 1vh, 1px);
+        padding-top: clamp(10px, 4vh, 60px);
     }
 
     .typewrite {
@@ -219,7 +219,7 @@
     .content {
 
         /* padding-top: 6vh; */
-        padding-top: clamp(-100px, 1vh, 1px);
+        padding-top: clamp(10px, 4vh, 60px);
     }
 
     .button-box {
@@ -238,7 +238,7 @@
     .content {
 
         /* padding-top: 1vh; */
-        padding-top: clamp(-100px, 1vh, 1px);
+        padding-top: clamp(10px, 4vh, 60px);
     }
 
     .button-box {
@@ -264,7 +264,7 @@
         gap: 20px;
 
         /* padding-top: 8vh; */
-        padding-top: clamp(-100px, -5vh, -100px);
+        padding-top: clamp(10px, 4vh, 60px);
     }
 
     .typewrite {
@@ -402,7 +402,7 @@
     .content {
 
         /* padding-top: 1vh; */
-        padding-top: clamp(-1000px, 52vh, -1000px);
+        padding-top: clamp(10px, 4vh, 60px);
     }
 
     .typewrite {

@@ -12,8 +12,7 @@
 
     justify-content: flex-start;
 
-    padding-top: clamp(1px, 1vh, 1px);
-
+    padding-top: clamp(10px, 4vh, 60px);
     gap: 30px;
 }
 
