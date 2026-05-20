@@ -33,7 +33,7 @@
     .content {
         width: 100%;
         padding: 0px 20px;
-        transform: translateY(-40px);
+        /* transform: translateY(-40px); */
     }
 
     .typewrite {
@@ -44,6 +44,7 @@
 
     .search-box {
         width: 100%;
+        position: relative;
     }
 
     .search-bar {
@@ -57,7 +58,7 @@
         padding: 8px;
     }
 
-.button-box {
+/* .button-box {
 
     position: absolute;
 
@@ -65,7 +66,7 @@
 
     left: 50%;
 
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); 
 
     width: 100%;
 
@@ -74,7 +75,7 @@
     justify-content: center;
 
     z-index: 5;
-}
+} */
 
     .location-btn {
         width: 100%;
@@ -134,6 +135,18 @@
     .weather-stat {
         min-height: 120px;
     }
+    .suggestions {
+    
+            position: absolute;
+    
+            top: 100%;
+    
+            left: 0;
+    
+            width: 100%;
+    
+            z-index: 20;
+        }
 }
 
 
@@ -146,7 +159,7 @@
 
     .content {
         gap: 20px;
-        transform: translateY(-20px);
+        /* transform: translateY(-20px); */
     }
 
     .typewrite {
