@@ -189,7 +189,7 @@ MOBILE DEVICES
 @media(max-width:480px) {
 
     .page1 {
-        padding-top: 260px;
+        padding-top: 240px;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -299,7 +299,7 @@ SMALL PHONES
 @media(max-width:360px) {
 
     .page1 {
-        padding-top: 270px;
+        padding-top: 210px;
     }
 
     .typewrite {
