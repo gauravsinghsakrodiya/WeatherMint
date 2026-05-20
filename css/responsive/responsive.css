@@ -1,13 +1,13 @@
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
+/*=========================================
+RESPONSIVE DESIGN
+=========================================*/
 
 
-/* =========================================
-   LARGE TABLETS
-========================================= */
+/*=========================================
+LARGE TABLETS
+=========================================*/
 
-@media (max-width: 1024px) {
+@media(max-width:1024px) {
 
     .search-box {
         width: 90%;
@@ -31,402 +31,294 @@
 }
 
 
-/* =========================================
-   TABLETS
-========================================= */
+/*=========================================
+TABLETS
+=========================================*/
 
-@media (max-width: 768px) {
+@media(max-width:768px) {
 
     .page1 {
-
-        padding: 20px;
-
+        padding-top: 240px;
+        padding-left: 20px;
+        padding-right: 20px;
         overflow: hidden;
     }
 
     .content {
-
         width: 100%;
-
-        padding: 0px 20px;
-
         display: flex;
-
         flex-direction: column;
-
         align-items: center;
-
-        justify-content: flex-start;
-
         gap: 25px;
-
-        /* padding-top: 2vh; */
-        padding-top: clamp(10px, 4vh, 60px);
     }
 
     .typewrite {
-
         text-align: center;
-
         font-size: 2.2rem;
-
         line-height: 1.3;
     }
 
     .search-box {
-
         width: 100%;
-
         position: relative;
     }
 
     .search-bar {
-
         height: 55px;
-
         font-size: 15px;
-
         padding-left: 18px;
-
         padding-right: 60px;
     }
 
     .ri-search-ai-line {
-
         font-size: 1.1rem;
-
         padding: 8px;
     }
 
     .suggestions {
-
         position: absolute;
-
         top: 100%;
-
         left: 0;
-
         width: 100%;
-
         z-index: 20;
-
         max-height: 250px;
-
         overflow-y: auto;
     }
 
     .location-btn {
-
         width: 100%;
-
         max-width: 320px;
-
         justify-content: center;
     }
 
     .button-box {
-
         bottom: calc(env(safe-area-inset-bottom) + 55px);
     }
 
     .page2 {
-
         padding: 40px 20px;
-
         min-height: 100vh;
-
         height: auto;
-
         align-items: flex-start;
     }
 
     .headings {
-
         position: static;
-
         width: 100%;
-
         margin-bottom: 30px;
     }
 
     .headings h1 {
-
         font-size: 5rem;
-
         line-height: 1;
-
         word-break: break-word;
     }
 
     .headings p {
-
         font-size: 1.1rem;
-
         margin-top: 10px;
     }
 
     .temp-row {
-
         flex-direction: column;
-
         align-items: flex-start;
     }
 
     .temp-city {
-
         margin-left: 0;
-
         margin-bottom: 0;
-
         margin-top: 10px;
-
         font-size: 1.2rem;
     }
 
     .weather-line {
-
         max-width: 100%;
-
         white-space: normal;
-
         line-height: 1.5;
     }
 
     .box-1 {
-
         width: 100%;
-
         height: auto;
-
         grid-template-columns: repeat(2, 1fr);
-
         padding: 15px;
     }
 
     .weather-stat {
-
         min-height: 120px;
     }
 }
 
 
-/* =========================================
-   TALL MOBILE DEVICES
-========================================= */
+/*=========================================
+TALL MOBILE DEVICES
+=========================================*/
 
-@media (min-height: 850px) and (max-width: 768px) {
+@media(min-height:850px) and (max-width:768px) {
 
-    .content {
-
-        /* padding-top: 6vh; */
-        padding-top: clamp(10px, 4vh, 60px);
+    .page1 {
+        padding-top: 40px;
     }
 
     .button-box {
-
         bottom: calc(env(safe-area-inset-bottom) + 70px);
     }
 }
 
 
-/* =========================================
-   SMALL HEIGHT DEVICES
-========================================= */
+/*=========================================
+SMALL HEIGHT DEVICES
+=========================================*/
 
-@media (max-height: 700px) and (max-width: 768px) {
+@media(max-height:700px) and (max-width:768px) {
 
-    .content {
-
-        /* padding-top: 1vh; */
-        padding-top: clamp(10px, 4vh, 60px);
+    .page1 {
+        padding-top: 25px;
     }
 
     .button-box {
-
         bottom: calc(env(safe-area-inset-bottom) + 60px);
     }
 }
 
 
-/* =========================================
-   MOBILE DEVICES
-========================================= */
+/*=========================================
+MOBILE DEVICES
+=========================================*/
 
-@media (max-width: 480px) {
+@media(max-width:480px) {
 
     .page1 {
-
-        padding: 20px 16px;
+        padding-top: 250px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .content {
-
         gap: 20px;
-
-        /* padding-top: 8vh; */
-        padding-top: clamp(10px, 4vh, 60px);
     }
 
     .typewrite {
-
         font-size: 1.7rem;
-
         text-align: center;
-
         line-height: 1.4;
     }
 
     .search-box {
-
         width: 100%;
     }
 
     .search-bar {
-
         height: 52px;
-
         font-size: 14px;
-
         padding-left: 15px;
-
         padding-right: 55px;
     }
 
     .search-bar::placeholder {
-
         font-size: 13px;
     }
 
     .ri-search-ai-line {
-
         right: 8px;
-
         padding: 7px;
-
         font-size: 1rem;
     }
 
     .suggestions {
-
         max-height: 220px;
-
         z-index: 20;
     }
 
     .suggestion-item {
-
         padding: 12px 14px;
-
         font-size: 13px;
     }
 
     .location-btn {
-
         font-size: 0.95rem;
-
         padding: 12px 18px 12px 45px;
     }
 
     .ri-gps-line {
-
         font-size: 1.3rem;
-
         left: 14px;
     }
 
     .button-box {
-
-        bottom: calc(env(safe-area-inset-bottom) + 160px);
+        bottom: calc(env(safe-area-inset-bottom) + 140px);
     }
 
     .page2 {
-
         padding: 30px 15px;
     }
 
     .headings h1 {
-
         font-size: 3.5rem;
     }
 
     .headings p {
-
         font-size: 0.95rem;
     }
 
     .box-1 {
-
         grid-template-columns: 1fr;
-
         gap: 12px;
     }
 
     .weather-stat {
-
         padding: 20px;
     }
 
     .weather-stat h3 {
-
         font-size: 13px;
     }
 
     .weather-stat p {
-
         font-size: 1.2rem;
     }
 
     .temp-city {
-
         font-size: 1rem;
     }
 
     .weather-line {
-
         font-size: 0.95rem;
     }
 
     .loader-box {
-
         top: 75px;
     }
 }
 
 
-/* =========================================
-   SMALL PHONES
-========================================= */
+/*=========================================
+SMALL PHONES
+=========================================*/
 
-@media (max-width: 360px) {
+@media(max-width:360px) {
 
-    .content {
-
-        /* padding-top: 1vh; */
-        padding-top: clamp(10px, 4vh, 60px);
+    .page1 {
+        padding-top: 250px;
     }
 
     .typewrite {
-
         font-size: 1.4rem;
     }
 
     .headings h1 {
-
         font-size: 2.8rem;
     }
 
     .search-bar {
-
         height: 48px;
     }
 
     .location-btn {
-
         font-size: 0.85rem;
     }
 
     .button-box {
-
         bottom: calc(env(safe-area-inset-bottom) + 100px);
     }
 }
