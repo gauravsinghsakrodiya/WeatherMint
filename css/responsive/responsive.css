@@ -243,7 +243,7 @@
 
     .button-box {
 
-        bottom: calc(env(safe-area-inset-bottom) + 40px);
+        bottom: calc(env(safe-area-inset-bottom) + 50px);
     }
 }
 
@@ -336,7 +336,7 @@
 
     .button-box {
 
-        bottom: calc(env(safe-area-inset-bottom) + 65px);
+        bottom: calc(env(safe-area-inset-bottom) + 75px);
     }
 
     .page2 {
