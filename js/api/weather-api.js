@@ -4,34 +4,89 @@ import { apiKey }
 import { renderWeather }
     from "../ui/render.weather.js";
 
+const noResult =
+    document.querySelector(".no-result");
+
 export async function getWeather(city) {
 
-    const apiURL =
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    try {
 
-    const response = await fetch(apiURL);
+        // Prevent empty searches
+        if (!city || city.trim() === "") {
 
-    const data = await response.json();
+            noResult.style.display = "block";
+            noResult.textContent = "Please enter a city name";
 
-    console.log(data);
+            return;
+        }
 
-    renderWeather(data);
+        const apiURL =
+            `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
-    document.body.classList.remove("lock-scroll");
+        const response = await fetch(apiURL);
+
+        const data = await response.json();
+
+        console.log(data);
+
+        // Check invalid city or API failure
+        if (data.cod !== 200 || !data.main) {
+
+            noResult.style.display = "block";
+            noResult.textContent = "City not found. Try another location.";
+
+            return;
+        }
+
+        // Hide error if valid
+        noResult.style.display = "none";
+
+        renderWeather(data);
+
+        document.body.classList.remove("lock-scroll");
+
+    } catch (error) {
+
+        console.error("Weather Fetch Error:", error);
+
+        noResult.style.display = "block";
+        noResult.textContent = "Something went wrong. Please try again.";
+    }
 }
 
 export async function getWeatherByCoords(lat, lon) {
 
-    const apiURL =
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+    try {
 
-    const response = await fetch(apiURL);
+        const apiURL =
+            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
-    const data = await response.json();
+        const response = await fetch(apiURL);
 
-    console.log(data);
+        const data = await response.json();
 
-    renderWeather(data);
+        console.log(data);
 
-    document.body.classList.remove("lock-scroll");
+        // Validate location weather response
+        if (data.cod !== 200 || !data.main) {
+
+            noResult.style.display = "block";
+            noResult.textContent = "Unable to fetch location weather.";
+
+            return;
+        }
+
+        noResult.style.display = "none";
+
+        renderWeather(data);
+
+        document.body.classList.remove("lock-scroll");
+
+    } catch (error) {
+
+        console.error("Location Weather Error:", error);
+
+        noResult.style.display = "block";
+        noResult.textContent = "Location weather failed.";
+    }
 }

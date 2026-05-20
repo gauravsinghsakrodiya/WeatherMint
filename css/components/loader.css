@@ -113,8 +113,14 @@
 
 /* No Result Text */
 .no-result {
-    color: white;
     font-family: var(--font-family);
-    font-size: 16px;
     display: none;
+
+    color: white;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    margin-top: 15px;
 }
