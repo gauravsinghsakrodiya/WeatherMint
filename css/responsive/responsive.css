@@ -336,7 +336,7 @@
 
     .button-box {
 
-        bottom: calc(env(safe-area-inset-bottom) + 200px);
+        bottom: calc(env(safe-area-inset-bottom) + 160px);
     }
 
     .page2 {
@@ -427,6 +427,6 @@
 
     .button-box {
 
-        bottom: calc(env(safe-area-inset-bottom) + 55px);
+        bottom: calc(env(safe-area-inset-bottom) + 160px);
     }
 }

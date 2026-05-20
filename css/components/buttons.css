@@ -11,7 +11,7 @@
 
     position: absolute;
 
-    bottom: calc(env(safe-area-inset-bottom) + 90px);
+    bottom: calc(env(safe-area-inset-bottom) + 80px);
 
     left: 50%;
 
