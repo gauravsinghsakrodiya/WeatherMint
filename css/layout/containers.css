@@ -1,25 +1,20 @@
 .content {
-    /* display: flex;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    display: flex;
+
     flex-direction: column;
+
     align-items: center;
-    justify-content: center;
-    gap: 10px;
 
-    transform: translateY(-80px); */
+    justify-content: flex-start;
 
-        width: 100%;
-        
-            max-width: 900px;
-        
-            display: flex;
-        
-            flex-direction: column;
-        
-            align-items: center;
-        
-            justify-content: center;
-        
-            gap: 30px;
+    padding-top: clamp(1px, 1vh, 1px);
+
+    gap: 30px;
 }
 
 .headings {
