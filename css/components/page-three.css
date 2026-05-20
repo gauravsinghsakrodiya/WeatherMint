@@ -1,0 +1,230 @@
+.page3 {
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 1rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    overflow: hidden;
+}
+
+/* ========================= */
+/* TOP SECTION */
+/* ========================= */
+
+.top-month-section {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0.8rem;
+
+    margin-bottom: 1rem;
+}
+
+/* CURRENT MONTH */
+
+.current-month-box {
+
+    padding: 0.7rem 3rem;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(20px);
+
+    color: white;
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* NEXT MONTHS */
+
+.next-months-box {
+
+    display: flex;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.month-card {
+
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(20px);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    user-select: none;
+}
+
+.month-card:hover {
+
+    transform: translateY(-3px);
+
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* ========================= */
+/* CALENDAR */
+/* ========================= */
+
+.calendar-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 0.6rem;
+    align-content: start;
+}
+
+/* DAY BOX */
+
+.day-box {
+
+    height: 65px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(20px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    transition: 0.3s ease;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+.day-box:hover {
+
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* DATE */
+
+.date {
+
+    font-size: 0.8rem;
+
+    opacity: 0.7;
+}
+
+/* TEMP */
+
+.temp {
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:1100px) {
+
+    .calendar-container {
+
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media(max-width:850px) {
+
+    .calendar-container {
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width:650px) {
+
+    .calendar-container {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .current-month-box {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .month-card {
+
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media(max-width:450px) {
+
+    .calendar-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .day-box {
+
+        height: 80px;
+    }
+}

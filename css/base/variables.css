@@ -1,0 +1,8 @@
+:root {
+    --primary-color: rgb(20, 20, 20);
+    --secoundry-color: rgb(48, 48, 48);
+    --font-family: "Roboto", sans-serif;
+    --font-pimary-heading: 9.8rem;
+    --font-secountry: 1.4rem;
+    --font-color: white;
+}

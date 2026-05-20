@@ -1,0 +1,50 @@
+.typewrite {
+    color: white;
+    /* font-size: 3rem; */
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-family: var(--font-family);
+    opacity: 0.9;
+}
+
+.typewrite>.wrap {
+    border-right: 0.08em solid white;
+}
+
+.headings h1 {
+    color: white;
+    font-family: var(--font-family);
+    /* font-size: var(--font-pimary-heading); */
+    font-size: clamp(3rem, 10vw, 9.8rem);
+}
+
+.headings p {
+    color: white;
+    font-family: var(--font-family);
+    font-size: var(--font-secountry);
+}
+
+.weather-stat h3 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+}
+
+.weather-stat p {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+
+.temp-city {
+    margin-left: 10px;
+    margin-bottom: 45px;
+    font-family: sans-serif;
+}
+
+.weather-line {
+    max-width: 600px;
+    white-space: nowrap;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+}

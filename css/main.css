@@ -1,0 +1,27 @@
+/* BASE */
+@import url("./base/reset.css");
+@import url("./base/variables.css");
+@import url("./base/typography.css");
+@import url("./base/base.css");
+
+/* LAYOUT */
+@import url("./layout/app.css");
+@import url("./layout/pages.css");
+@import url("./layout/containers.css");
+
+/* COMPONENTS */
+@import url("./components/video.css");
+@import url("./components/search.css");
+@import url("./components/suggestion.css");
+@import url("./components/buttons.css");
+@import url("./components/loader.css");
+@import url("./components/weather-card.css");
+@import url("./components/typewriter.css");
+@import url("./components/page-three.css");
+
+/* UTILITIES */
+@import url("./utilities/helpers.css");
+@import url("./utilities/animations.css");
+
+/* RESPONSIVE */
+@import url("./responsive/responsive.css");

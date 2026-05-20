@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WeatherMint</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+            rel="stylesheet" />
+
+    </head>
+    <body>
+      <video class="bg-video" autoplay muted loop playsinline src="./assets/20d5a09a9048bcbf8ef4cc35d25a0c49.mp4"></video>
+
+<div class="main">
+<!-- Page 1 -->
+            <div class="page1">
+                  <div class="content">
+                    <!-- Tywriter Effect -->
+                    <h1>
+                        <a
+                            href="#"
+                            class="typewrite"
+                            data-period="2000"
+                            data-type='["How’s The Weather Today?", "Check Weather In Any City.", "Rain, Wind Or Sunshine?", "Weather At Your Fingertips."]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <!-- Searc Box -->
+                    <div class="search-box">
+                        <input class="search-bar" type="search" placeholder="Enter Your City,State">
+                        <i class="ri-search-ai-line" id="icon"></i>
+                        <!-- Loader -->
+                        <div class="loader-box">
+                            
+                            <div class="spinner">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <!-- Loader -->
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p class="no-result">No Results Found</p> 
+                        </div>
+                        <span></span>
+                        <!-- loader end -->
+                        <div class="suggestions"></div>
+                    </div>
+
+                    <div class="button-box">
+                        <button class="location-btn" id="location-btn">
+                            <i class="ri-gps-line"></i>
+                            Current Location
+                        </button> 
+                    </div>
+                   
+                </div>
+            </div>
+<!-- Page 2 -->
+            <div class="page2" id="page2">
+                    <div class="content-page-two">
+                        <div class="headings">
+           
+                            <div class="temp-row">
+                                <h1 class="temp">--°C</h1>
+                                <h2 class="temp-city" id="temp-city"></h2>
+                            </div>
+                         
+                         <p class="weather-line"></p>
+                         <div class="box-1">
+
+                              <div class="weather-stat">
+                                <h3>High</h3>
+                                  <p class="high-temp">--°</p>
+                                </div>
+                                
+                                <div class="weather-stat">
+                                    <h3>Low</h3>
+                                    <p class="low-temp">--°</p>
+                                </div>
+                                
+                                <div class="weather-stat">
+                                    <h3>Humidity</h3>
+                                    <p class="humidity">--%</p>
+                                </div>
+                                
+                                <div class="weather-stat">
+                                    <h3>Wind Speed</h3>
+                                    <p class="wind-speed">-- km/h</p>
+                                </div>
+                                
+                                <div class="weather-stat">
+                                    <h3>Feels Like</h3>
+                                    <p class="feels-like">--°</p>
+                                </div>
+                                
+                                <div class="weather-stat">
+                                    <h3>Pressure</h3>
+                                    <p class="pressure">-- hPa</p>
+                                </div>
+                                
+                            </div>
+                         </div>
+                        </div>
+                    
+                        
+                    </div>
+            </div>
+<!-- Page 3 -->
+            <!-- <div class="page3">
+                    <div class="content-page-two"></div>
+            </div> -->
+<!-- Page 4 -->
+            <!-- <div class="page4">
+                    <div class="content-page-two"></div>
+            </div> -->
+</div>
+
+        <script type="module" src="./js/main.js"></script>
+        <!-- <script src="script.js"></script> -->
+    </body>
+</html>
