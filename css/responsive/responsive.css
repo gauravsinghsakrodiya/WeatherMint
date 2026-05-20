@@ -57,12 +57,24 @@
         padding: 8px;
     }
 
-    .button-box {
-        position: static;
-        margin-top: 20px;
-        justify-content: center;
-        width: 100%;
-    }
+.button-box {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    z-index: 5;
+}
 
     .location-btn {
         width: 100%;
@@ -165,6 +177,7 @@
 
     .suggestions {
         max-height: 220px;
+        z-index: 20;
     }
 
     .suggestion-item {
